@@ -48,7 +48,7 @@ module.exports = React.createClass({
 
     var line = this.props.data.line;
     var pit = this.props.data.pit;
-    if (pit && line > 0) {
+    if (pit && line > -1) {
       var cm = this.state.codemirror;
       var str = JSON.stringify(pit);
 
